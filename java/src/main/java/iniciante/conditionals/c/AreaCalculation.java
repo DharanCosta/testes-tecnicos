@@ -1,9 +1,24 @@
 package iniciante.conditionals.c;
 
+import com.sun.jdi.event.ExceptionEvent;
+
+import java.io.IOException;
+
 public class AreaCalculation {
     private final double pi = 3.14;
-    public double calcArea(Shape shape) {
-        // TODO
+    public double calcArea(Shape shape){
+        if(shape.getMultiplier()<=0) {
+            throw new IllegalArgumentException();
+        }else if(shape instanceof Square){
+            double areaSquare = (Math.pow(shape.getMeasure(),2))* shape.getMultiplier();
+            return areaSquare;
+        } else if (shape instanceof Triangle) {
+            double areaTriangle = (Math.pow(shape.getMeasure(),2)/2)* shape.getMultiplier();
+            return areaTriangle;
+        } else if(shape instanceof Circle){
+            double areaCircle = ((Math.pow(shape.getMeasure(),2))*pi)*shape.getMultiplier();
+            return areaCircle;
+        }else
         return -1.00;
     }
 }

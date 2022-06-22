@@ -4,8 +4,12 @@ import java.util.Iterator;
 
 public class WhileLoop {
     public int countItems(Iterator<Integer> items) {
-        // TODO
-        return -1;
+        int cont = 0;
+        while(items.hasNext()){
+            cont++;
+            items.next();
+        }
+        return cont;
     }
 }
 
@@ -19,7 +23,7 @@ Retorne a quantidade de items na lista.
 Será preciso utilizar a notação 'while (items.hasNext) { ... }'
 Iterator é uma interface, que possui os méteodos
 'hasNext()', que retorna true ou false, se tiver ou não mais elementos na lista
-'next()' que retora o próximo elemento da lista
+'next()' que retorna o próximo elemento da lista
 
 # Exemplos
 [0, 5, 10, 15, 20] retorna 5

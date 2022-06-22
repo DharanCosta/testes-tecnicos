@@ -2,8 +2,10 @@ package iniciante.string.operations.a;
 
 public class CountAndCase {
     public String manipulate(String first, String second) {
-        // TODO
-        return "";
+        int sum = first.length()+second.length();
+        String s1 =first.toUpperCase();
+        String s2=second.toLowerCase();
+        return sum+s1+s2;
     }
 }
 

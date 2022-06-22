@@ -2,8 +2,13 @@ package iniciante.string.operations.b;
 
 public class Substring {
     public String pieceOfString(String text) {
-        // TODO
-        return null;
+
+        if(text.length()>5){
+         text = text.substring(3,(text.length()-2));
+         return text;
+        }else{
+            return "";
+        }
     }
 }
 

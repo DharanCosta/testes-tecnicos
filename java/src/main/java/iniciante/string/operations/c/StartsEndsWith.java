@@ -3,14 +3,34 @@ package iniciante.string.operations.c;
 public class StartsEndsWith {
     // inicia com vogal?
     public Boolean startsWith(String text) {
-        // TODO
-        return null;
+        if(text.startsWith("a")){
+            return true;
+        }else if (text.startsWith("e")) {
+            return true;
+        }else if (text.startsWith("i")) {
+            return true;
+        }else if (text.startsWith("o")) {
+            return true;
+        }else if (text.startsWith("u")) {
+            return true;
+        }
+        return false;
     }
 
     // terminal com vogal?
     public Boolean endsWith(String text) {
-        // TODO
-        return null;
+        if(text.endsWith("a")){
+            return true;
+        }else if (text.endsWith("e")) {
+            return true;
+        }else if (text.endsWith("i")) {
+            return true;
+        }else if (text.endsWith("o")) {
+            return true;
+        }else if (text.endsWith("u")) {
+            return true;
+        }
+        return false;
     }
 }
 
