@@ -9,7 +9,8 @@ public class AreaCalculation {
     public double calcArea(Shape shape){
         if(shape.getMultiplier()<=0) {
             throw new IllegalArgumentException();
-        }else if(shape instanceof Square){
+        }
+        if(shape instanceof Square){
             double areaSquare = (Math.pow(shape.getMeasure(),2))* shape.getMultiplier();
             return areaSquare;
         } else if (shape instanceof Triangle) {

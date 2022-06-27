@@ -4,12 +4,12 @@ import java.util.Iterator;
 
 public class WhileLoop {
     public int countItems(Iterator<Integer> items) {
-        int cont = 0;
+        int count = 0;
         while(items.hasNext()){
-            cont++;
+            count++;
             items.next();
         }
-        return cont;
+        return count;
     }
 }
 

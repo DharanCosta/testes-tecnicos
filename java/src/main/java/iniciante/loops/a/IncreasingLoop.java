@@ -6,9 +6,7 @@ public class IncreasingLoop {
     public Integer sumItems(List<Integer> items) {
         int sum=0;
         for(int i : items){
-            if(i >= 10){
-              sum += i;
-            }
+            if(i >= 10) sum += i;
         }
         return sum;
 //        return -1;

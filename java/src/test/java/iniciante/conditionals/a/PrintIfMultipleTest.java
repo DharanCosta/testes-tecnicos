@@ -1,4 +1,4 @@
-package iniciante.conditionals.b.a;
+package iniciante.conditionals.a;
 
 import iniciante.conditionals.a.PrintIfMultiple;
 import org.junit.jupiter.api.AfterEach;

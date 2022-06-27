@@ -8,6 +8,7 @@ public class TollTest
 {
     private final Toll toll = new Toll();
 
+
     @Test
     public void citizenBike()
     {

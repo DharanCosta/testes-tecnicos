@@ -11,8 +11,6 @@ public class PrintIfMultiple {
         }else{
             System.out.println("Nenhum multiplo");
         }
-
-
     }
 }
 
